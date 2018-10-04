@@ -16,7 +16,7 @@ class PenampungThreading(threading.Thread):
         print ("Thread Dimulai: " + self.name)
         while self.berapaKali:
             time.sleep(self.delay)
-            print ("%s: %s" % ( self.name, time.ctime(time.time()) ))
+            print ("%s: %s" % ( self.name, str(self.berapaKali) ))
             self.berapaKali -= 1
         print ("Thread Selesai: " + self.name)
 
